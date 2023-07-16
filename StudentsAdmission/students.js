@@ -16,7 +16,7 @@ function display(data) {
     tbody.append(row);
 
     let td1 = document.createElement("td");
-    td1.innerText = el.name;
+    td1.innerText = el.name.toUpperCase();
 
     let td2 = document.createElement("td");
     td2.innerText = el.email;
@@ -43,6 +43,7 @@ function display(data) {
     td6.addEventListener("click", function () {
       add_Data("admission-accepted", el);
       Delete_Data(LSData, index);
+      swal("✅", "You are Accepted", "success");
     });
 
     let td7 = document.createElement("td");
@@ -58,6 +59,7 @@ function display(data) {
     td7.addEventListener("click", function () {
       add_Data("admission-rejected", el);
       Delete_Data(LSData, index);
+      swal("❌", "You are rejected", "error");
     });
 
     row.append(td1, td2, td3, td4, td5, td6, td7);

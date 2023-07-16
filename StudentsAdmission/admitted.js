@@ -10,7 +10,7 @@ function display(data) {
     tbody.append(row);
 
     let td1 = document.createElement("td");
-    td1.innerText = el.name;
+    td1.innerText = el.name.toUpperCase();
 
     let td2 = document.createElement("td");
     td2.innerText = el.email;

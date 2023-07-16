@@ -1,12 +1,21 @@
+body {
+  background-image: url("https://img.freepik.com/premium-vector/vector-school-cartoon-template-frame-with-office-student-supplies-stationery_364586-820.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #fonm_containers {
   width: 40%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 25px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    #0000004d 0px 3px 7px -3px;
+  font-size: 20px;
 }
-
+input {
+  margin-bottom: 10px;
+}
 .custom-btn {
   margin-top: 10px;
 }

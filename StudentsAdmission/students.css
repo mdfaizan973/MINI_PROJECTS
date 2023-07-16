@@ -1,6 +1,12 @@
+body {
+  background-image: url("https://img.freepik.com/premium-vector/vector-school-cartoon-template-frame-with-office-student-supplies-stationery_364586-820.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 table {
   width: 60% !important;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 #filtercontainer {
   width: 20%;

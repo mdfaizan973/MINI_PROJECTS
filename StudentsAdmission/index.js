@@ -6,7 +6,6 @@ let LSData = JSON.parse(localStorage.getItem("admission")) || [];
 
 add_form.addEventListener("submit", function () {
   event.preventDefault();
-
   let obj = {
     name: add_form.name.value,
     email: add_form.email.value,
@@ -15,8 +14,6 @@ add_form.addEventListener("submit", function () {
     course: add_form.course.value,
   };
 
-  // console.log(obj)
-
   if (
     obj.name == "" ||
     obj.email == "" ||
@@ -24,10 +21,16 @@ add_form.addEventListener("submit", function () {
     obj.gender == "" ||
     obj.course == ""
   ) {
-    alert("Please fill all the details.");
+    swal("😟", "Please fill all the details.", "error");
+  } else if (obj.phone.length <= 9 || obj.phone.length >= 11) {
+    swal("😟", "Phone No should be 10 numbers!", "error");
+    return;
   } else {
     LSData.push(obj);
-    // console.log(LSData)
+    swal("😊", "Student is Added ", "success");
     localStorage.setItem("admission", JSON.stringify(LSData));
+    setTimeout(() => {
+      window.location.reload();
+    }, 1500);
   }
 });
