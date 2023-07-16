@@ -1,0 +1,10 @@
+table {
+  width: 60% !important;
+  margin: 30px auto;
+}
+
+@media screen and (min-width: 100px) and (max-width: 450px) {
+  table {
+    width: 100%;
+  }
+}

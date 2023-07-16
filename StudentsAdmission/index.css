@@ -1,0 +1,18 @@
+#fonm_containers {
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.custom-btn {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 450px) {
+  #fonm_containers {
+    width: 100%;
+  }
+}

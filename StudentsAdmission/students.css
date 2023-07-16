@@ -1,0 +1,18 @@
+table {
+  width: 60% !important;
+  margin: 30px auto;
+}
+#filtercontainer {
+  width: 20%;
+  margin: auto;
+}
+#filter {
+  width: 100%;
+  margin-top: 20px !important;
+  justify-content: center;
+}
+@media screen and (min-width: 100px) and (max-width: 450px) {
+  table {
+    width: 100%;
+  }
+}
